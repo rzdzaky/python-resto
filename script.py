@@ -16,22 +16,22 @@ drinks = [drink1, drink2, drink3]
 print('Makanan')
 index = 0
 for food in foods:
-    print(str(index) + '. ' + food.info())
+    print(str(index+1) + '. ' + food.info())
     index += 1
 
 print('Minuman')
 index = 0
 for drink in drinks:
-    print(str(index) + '. ' + drink.info())
+    print(str(index+1) + '. ' + drink.info())
     index += 1
 
 print('--------------------')
 
 food_order = int(input('Masukkan nomor makanan: '))
-selected_food = foods[food_order]
+selected_food = foods[food_order-1]
 
 drink_order = int(input('Masukkan nomor minuman: '))
-selected_drink = drinks[drink_order]
+selected_drink = drinks[drink_order-1]
 
 # Ambil input dari console dan tetapkan ke variable count
 count = int(input('Mau berapa paket makanan? (Diskon 10% untuk 3 atau lebih): '))
